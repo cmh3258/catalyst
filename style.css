@@ -1,0 +1,265 @@
+
+
+body{
+  margin:0;
+}
+
+h1,h2,h3,h4{
+  font-family: Droid Sans;
+  color: #3e3e3e;
+}
+p{
+  font-family: Lora;
+  color: #313131;
+  line-height: 26px;
+  font-size: 16px;
+}
+p a{
+  color: #9100FF;
+  font-size: 16px;
+}
+a{
+  color: white;
+  font-size: 14px;
+  text-transform: initial;
+}
+a:active,
+a:hover{
+  color: #9100FF;
+}
+
+/* topNav */
+  #topNav{
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    /* margin-right: 3em; */
+    width: 100%;
+    /*background: gray;*/
+  }
+  #topNav ul{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #topNav li,
+  #topNav a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Ubuntu;
+    margin-bottom: 10px;
+    color: white;
+    display: inline-block;
+    margin-right: 2em;
+  }
+
+  #topNav li a{
+    opacity: .5;
+  }
+  #topNav li a:hover{
+    opacity: 1;
+  }
+  #topNav a.logo{
+    margin-left: 2em;
+    margin-top: 1em;
+    font-size: 16px;
+  }
+
+/* header */
+  #header{
+    text-align: center;
+    background-color: #9100FF;
+    background: url('images/stars.jpg') center no-repeat;
+    background-size: cover;
+  }
+  #header > div{
+    padding: 4em 0;
+  }
+  #mc_embed_signup{
+    background-color: transparent !important;
+  }
+  #mc_embed_signup input.email{
+    padding: 9px 12px;
+    width: 28em;
+  }
+  #mc_embed_signup_scroll{
+    width: 94%;
+    margin: 0 auto;
+  }
+  #mc_embed_signup input.email:focus{
+    /*-webkit-box-shadow:1px 2px 2px rgba(44, 84, 129, 1) inset;
+    -moz-box-shadow:1px 2px 2px rgba(44, 84, 129, 1) inset;
+    box-shadow:1px 1px 2px rgba(44, 84, 129, 1) inset;
+    outline: none;*/
+    outline:none !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(44, 84, 129, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(44, 84, 129, .6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0px rgba(44, 84, 129, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0px rgba(44, 84, 129, .6);
+    border:1px solid #2C5481 !important;
+  }
+  #header h1{
+    font-size: 30px;
+    font-family: Arvo, sans-serif;
+    font-weight: 100;
+    /*font-style: italic;*/
+    color: white;
+  }
+  #header h2{
+    color: #D6D6D6;
+    font-weight: lighter;
+    font-size: 14px;
+    width: 94%;
+    margin: 0 auto;
+    line-height: 22px;
+    margin-top: -12px;
+    margin-bottom: 18px;
+  }
+
+/* info section */
+  #info{
+    background-color: white;
+    /*padding: 7em 1em 5em;*/
+    padding: 5em 1em 1em;
+  }
+  #info > div p{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #info > div{
+    /*width: 80%;*/
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  #info img{
+    margin: 0 auto;
+    display: block;
+  }
+  #info > div > div img:nth-of-type(1){
+    width: 18em;
+  }
+  #info > div > div:nth-of-type(2) img{
+    width: 14em;
+  }
+  #info > div > div:nth-of-type(3) img{
+    width: 10em;
+  }
+
+/* social */
+  #social{
+    padding: 3em 1em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  hr{
+    padding: 0;
+    border: 0px;
+    border-top: 1px solid #F3F3F3;
+    width: 70%;
+    margin: 0 auto;
+  }
+  #social h3{
+    line-height: 33px;
+  }
+  #social ul{
+    padding: 0;
+  }
+  #social ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style-type: none;
+  }
+  #social img{
+    width: 36px;
+    display: inline-block;
+  }
+  /*#social li:nth-of-type(2) img{
+    width: 43px;
+  }
+  #social li:nth-of-type(3) img{
+    width: 43px;
+  }*/
+
+/* posts */
+  #posts{
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+/* faq */
+  #faq > div{
+    width: 50%;
+    margin:0 auto;
+    padding: 5em 0;
+  }
+
+/* footer */
+  footer{
+    padding: 4em 0;
+    background-color: #1F1F1F;
+    text-align: center;
+    color: #969696;
+    line-height: 25px;
+    font-family: Lora;
+  }
+
+@media (min-width: 768px){
+  #mc_embed_signup input.email{
+    padding: 9px 12px !important;
+    width: 28em !important;
+    display: inline-block !important;
+  }
+  #mc_embed_signup .button{
+    width: auto !important;
+    display: inline-block !important;
+  }
+  #mc_embed_signup .clear {
+    display: inline-block !important;
+    width: auto !important;
+  }
+}
+
+@media(min-width: 1200px){
+  #header > div{
+    padding: 10em;
+  }
+    #about #header > div {
+      padding: 5em;
+    }
+  #header h1{
+    font-size: 38px;
+  }
+  #header h2{
+    width: 40%;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  #info{
+    padding: 9em 1em 5em;
+  }
+  #info > div > div{
+    width: 33%;
+    display: inline-block;
+    /*padding: 3em;*/
+  }
+
+  #social{
+    padding: 7em 1em;
+  }
+
+  #posts{
+    padding: 5em 0;
+    width: 55%;
+  }
+
+}
+
+
