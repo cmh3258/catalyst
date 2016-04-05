@@ -28,14 +28,28 @@ a:hover{
   color: #9100FF;
 }
 
+/* button */
+  .signup-btn{
+        background: #0DCAC5;
+    border: 0;
+    border-radius: 9px;
+    color: white;
+    width: 10em;
+    font-size: 17px;
+    padding: 10px 22px;
+  }
+
 /* topNav */
   #topNav{
     position: absolute;
     top: 0;
     /* right: 0; */
     /* margin-right: 3em; */
-    width: 100%;
+    width: 80%;
     /*background: gray;*/
+    margin: 0 auto;
+    left: 0;
+    right: 0;
   }
   #topNav ul{
     position: absolute;
@@ -199,6 +213,9 @@ a:hover{
     margin:0 auto;
     padding: 5em 0;
   }
+  iframe{
+    height: 141em;
+  }
 
 /* footer */
   footer{
@@ -229,6 +246,12 @@ a:hover{
 @media(min-width: 1200px){
   #header > div{
     padding: 10em;
+    width: 52%;
+    margin:0 auto;
+  }
+  #header.smallerHeader > div{
+    padding: 5em;
+
   }
     #about #header > div {
       padding: 5em;
@@ -237,7 +260,7 @@ a:hover{
     font-size: 38px;
   }
   #header h2{
-    width: 40%;
+    /*width: 40%;*/
     font-size: 16px;
     line-height: 27px;
   }
