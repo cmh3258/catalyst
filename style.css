@@ -213,9 +213,14 @@ a:hover{
     margin:0 auto;
     padding: 5em 0;
   }
-  iframe{
+  /*iframe{
     height: 141em;
-  }
+  }*/
+
+#typeformSection{
+    padding: 5em 0;
+  
+}
 
 /* footer */
   footer{
