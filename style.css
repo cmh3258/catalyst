@@ -28,9 +28,13 @@ a:hover{
   color: #9100FF;
 }
 
+section{
+  padding: 4em 0;
+}
+
 /* button */
   .signup-btn{
-        background: #0DCAC5;
+    background: #0DCAC5;
     border: 0;
     border-radius: 9px;
     color: white;
@@ -38,6 +42,19 @@ a:hover{
     font-size: 17px;
     padding: 10px 22px;
   }
+
+/* icons */
+    #ppl-icon{
+      width: 3.2em;
+    }
+    #connect-icon{
+      width: 3.4em;
+
+    }
+    #expand-icon{
+      width: 53px;
+
+    }
 
 /* topNav */
   #topNav{
@@ -55,6 +72,7 @@ a:hover{
     position: absolute;
     right: 0;
     top: 0;
+        margin-right: -62px;
   }
   #topNav li,
   #topNav a{
@@ -75,7 +93,7 @@ a:hover{
     opacity: 1;
   }
   #topNav a.logo{
-    margin-left: 2em;
+    /*margin-left: 2em;*/
     margin-top: 1em;
     font-size: 16px;
   }
@@ -141,21 +159,40 @@ a:hover{
     width: 85%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     font-size: 14px;
     line-height: 24px;
+
+    font-family: Ubuntu;
+    font-weight: lighter;
+    font-size: 14px;
   }
   #info > div{
     /*width: 80%;*/
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1100px;
+    overflow: hidden;
   }
   
   #info img{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     display: block;
+    margin: 0 auto 25px;
   }
-  #info > div > div img:nth-of-type(1){
+  #info > div > div{
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  #info > div > div h4{
+    margin: 5px;
+    font-size: 19px;
+    color: #151515;
+    font-weight: lighter;
+  }
+  #info > div > div img{
+    margin-bottom: 2em;
+  }
+  /*#info > div > div img:nth-of-type(1){
     width: 18em;
   }
   #info > div > div:nth-of-type(2) img{
@@ -163,7 +200,7 @@ a:hover{
   }
   #info > div > div:nth-of-type(3) img{
     width: 10em;
-  }
+  }*/
 
 /* social */
   #social{
@@ -209,13 +246,34 @@ a:hover{
 
 /* faq */
   #faq > div{
-    width: 50%;
+    /*width: 50%;
     margin:0 auto;
-    padding: 5em 0;
+    padding: 5em 0;*/
+    width: 86%;
+    margin: 0 auto;
+    padding: 0em 0;
   }
   /*iframe{
     height: 141em;
   }*/
+
+/* vision */
+  #vision > div{
+    /*width: 50%;
+    text-align: center;*/
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #vision{
+        padding: 3em 0;
+  }
+  #vision h3{
+    line-height: 38px;
+    color: #949494;
+    font-weight: 400;
+  }
+
 
 #typeformSection{
     padding: 5em 0;
@@ -246,9 +304,21 @@ a:hover{
     display: inline-block !important;
     width: auto !important;
   }
+
+  #info > div > div{
+    width: 33%;
+    /*display: inline-block;*/
+    float: left;
+    /*padding: 3em;*/
+  }
 }
 
 @media(min-width: 1200px){
+  section > div{
+    width: 80%;
+    margin: 0 auto;
+  }
+
   #header > div{
     padding: 10em;
     width: 52%;
@@ -275,8 +345,12 @@ a:hover{
   }
   #info > div > div{
     width: 33%;
-    display: inline-block;
+    /*display: inline-block;*/
+    float: left;
     /*padding: 3em;*/
+  }
+  #info > div p{
+    width: 85%;
   }
 
   #social{
@@ -286,6 +360,19 @@ a:hover{
   #posts{
     padding: 5em 0;
     width: 55%;
+  }
+
+  #faq > div{
+    width: 50%;
+    margin:0 auto;
+    padding: 5em 0;
+  }
+
+  #vision{
+    padding: 7em 0;
+  }
+  #vision > div{
+    width: 50%;
   }
 
 }
