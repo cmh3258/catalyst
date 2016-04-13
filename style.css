@@ -9,10 +9,12 @@ h1,h2,h3,h4{
   color: #3e3e3e;
 }
 p{
-  font-family: Lora;
+  /*font-family: Lora;*/
   color: #313131;
   line-height: 26px;
   font-size: 16px;
+  font-family: Ubuntu;
+  font-weight: lighter;
 }
 p a{
   color: #9100FF;
@@ -41,6 +43,10 @@ section{
     width: 10em;
     font-size: 17px;
     padding: 10px 22px;
+    cursor: pointer;
+  }
+  .signup-btn:hover{
+    opacity: .9;
   }
 
 /* icons */
@@ -102,11 +108,16 @@ section{
   #header{
     text-align: center;
     background-color: #9100FF;
-    background: url('images/stars.jpg') center no-repeat;
+    background: url('images/pizza.jpeg') center no-repeat;
     background-size: cover;
   }
   #header > div{
     padding: 4em 0;
+  }
+  #faq #header{
+    background: url('images/bubble.jpeg') center no-repeat;
+    background-size: cover;
+    text-align: center;
   }
   #mc_embed_signup{
     background-color: transparent !important;
@@ -245,7 +256,7 @@ section{
   }
 
 /* faq */
-  #faq > div{
+  #faqSection > div{
     /*width: 50%;
     margin:0 auto;
     padding: 5em 0;*/
@@ -253,6 +264,16 @@ section{
     margin: 0 auto;
     padding: 0em 0;
   }
+  #faqSection p{
+
+    width: 70%;
+    font-size: 16px;
+  }
+  #faqSection h2{
+    font-size: 18px;
+    margin-top: 3em;
+  }
+
   /*iframe{
     height: 141em;
   }*/
@@ -287,7 +308,15 @@ section{
     text-align: center;
     color: #969696;
     line-height: 25px;
-    font-family: Lora;
+    font-family: Arvo;
+  }
+  footer ul{
+    text-align: left;
+  }
+  footer ul li{
+    font-size: 14px;
+    display: inline-block;
+    padding-right: 4em;
   }
 
 @media (min-width: 768px){
@@ -362,10 +391,10 @@ section{
     width: 55%;
   }
 
-  #faq > div{
+  #faqSection > div{
     width: 50%;
     margin:0 auto;
-    padding: 5em 0;
+    padding: 0em 0;
   }
 
   #vision{
