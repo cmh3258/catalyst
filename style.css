@@ -33,6 +33,9 @@ a:hover{
 section{
   padding: 4em 0;
 }
+#header{
+  padding: 0;
+}
 
 /* button */
   .signup-btn{
@@ -73,6 +76,7 @@ section{
     margin: 0 auto;
     left: 0;
     right: 0;
+    z-index: 1;
   }
   #topNav ul{
     position: absolute;
@@ -93,25 +97,31 @@ section{
   }
 
   #topNav li a{
-    opacity: .5;
+    /*opacity: .5;*/
   }
   #topNav li a:hover{
-    opacity: 1;
+    /*opacity: .8;*/
+    color:#0DCAC5;
+    
   }
   #topNav a.logo{
     /*margin-left: 2em;*/
     margin-top: 1em;
     font-size: 16px;
   }
+  a:hover{
+    color:#0DCAC5;
+  }
 
 /* header */
   #header{
     text-align: center;
     background-color: #9100FF;
-    background: url('images/pizza.jpeg') center no-repeat;
+    background: url('images/yopro_table.jpeg') center no-repeat;
     background-size: cover;
+    /*background-position-y: 5em;*/
   }
-  #header > div{
+  #header > div > div{
     padding: 4em 0;
   }
   #faq #header{
@@ -119,6 +129,14 @@ section{
     background-size: cover;
     text-align: center;
   }
+  .darkenFade{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #e1e1e1;
+    background: linear-gradient(to top,rgba(30,30,30,0),rgba(30,30,30,.6));
+  }
+
   #mc_embed_signup{
     background-color: transparent !important;
   }
@@ -348,8 +366,8 @@ section{
     margin: 0 auto;
   }
 
-  #header > div{
-    padding: 10em;
+  #header > div > div{
+    padding: 12em;
     width: 52%;
     margin:0 auto;
   }
@@ -357,7 +375,7 @@ section{
     padding: 5em;
 
   }
-    #about #header > div {
+    #about #header > div > div{
       padding: 5em;
     }
   #header h1{
