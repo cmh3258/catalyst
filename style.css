@@ -10,7 +10,7 @@ h1,h2,h3,h4{
 }
 p{
   /*font-family: Lora;*/
-  color: #313131;
+  color: #656565;
   line-height: 26px;
   font-size: 16px;
   font-family: Ubuntu;
@@ -35,6 +35,12 @@ section{
 }
 #header{
   padding: 0;
+  position: relative;
+  height: 30em;
+}
+#header.smallerHeader{
+  height: 20em;
+
 }
 
 /* button */
@@ -49,12 +55,13 @@ section{
     cursor: pointer;
   }
   .signup-btn:hover{
-    opacity: .9;
+    /*opacity: .9;*/
+    background-color: #0CA5A0;
   }
 
 /* icons */
     #ppl-icon{
-      width: 3.2em;
+      width: 38px;
     }
     #connect-icon{
       width: 3.4em;
@@ -309,10 +316,48 @@ section{
   }
   #vision h3{
     line-height: 38px;
-    color: #949494;
+    color: #656565;
     font-weight: 400;
   }
 
+
+/* about page */
+  #about-profiles{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-profile-container{
+    width: 32%;
+    display: inline-block;
+    overflow: hidden;
+    padding: 5em;
+  }
+  .prof-img-container{
+    height: 12em;
+    overflow: hidden;
+  }
+  .about-profile-container img{
+    width: 100%;
+  }
+  .about-profile-container h4{
+    margin: 0;
+    margin-top: 10px;
+  }
+  .about-profile-container h4 a{
+    color: #0DCAC5;
+    text-decoration: none;
+  }
+  .about-profile-container h4 a:hover{
+    color: #0CA5A0;
+  }
+  .about-profile-container h6{
+    margin: 0;
+    margin: 0;
+    font-family: Droid Sans;
+    color: gray;
+    font-weight: lighter;
+    margin-top: 3px;
+  }
 
 #typeformSection{
     padding: 5em 0;
@@ -367,14 +412,18 @@ section{
   }
 
   #header > div > div{
-    padding: 12em;
+    padding: 9em;
     width: 52%;
     margin:0 auto;
   }
-  #header.smallerHeader > div{
-    padding: 5em;
+  #header.smallerHeader > div > div{
+    padding: 7em;
 
   }
+  /*#header.smallerHeader > div{
+    padding: 5em;
+
+  }*/
     #about #header > div > div{
       padding: 5em;
     }
