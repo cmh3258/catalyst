@@ -5,7 +5,8 @@ body{
 }
 
 h1,h2,h3,h4{
-  font-family: Droid Sans;
+  /*font-family: Droid Sans;*/
+  font-family: Arvo;
   color: #3e3e3e;
 }
 p{
@@ -353,7 +354,7 @@ section{
   .about-profile-container h6{
     margin: 0;
     margin: 0;
-    font-family: Droid Sans;
+    font-family: Ubuntu;
     color: gray;
     font-weight: lighter;
     margin-top: 3px;
