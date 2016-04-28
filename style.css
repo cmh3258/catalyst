@@ -18,7 +18,7 @@ p{
   font-weight: lighter;
 }
 p a{
-  color: #9100FF;
+  color: #913FD8;
   font-size: 16px;
 }
 a{
@@ -28,7 +28,7 @@ a{
 }
 a:active,
 a:hover{
-  color: #9100FF;
+  color: #913FD8;
 }
 
 section{
@@ -124,7 +124,7 @@ section{
 /* header */
   #header{
     text-align: center;
-    background-color: #9100FF;
+    background-color: #913FD8;
     background: url('images/yopro_table.jpeg') center no-repeat;
     background-size: cover;
     /*background-position-y: 5em;*/
@@ -222,7 +222,7 @@ section{
   }
   #info > div > div h4{
     margin: 5px;
-    font-size: 19px;
+    font-size: 18px;
     color: #151515;
     font-weight: lighter;
   }
@@ -298,6 +298,7 @@ section{
   #faqSection h2{
     font-size: 18px;
     margin-top: 3em;
+    font-weight: 500;
   }
 
   /*iframe{
@@ -319,6 +320,7 @@ section{
     line-height: 38px;
     color: #656565;
     font-weight: 400;
+    font-size: 16px;
   }
 
 
@@ -326,12 +328,14 @@ section{
   #about-profiles{
     width: 80%;
     margin: 0 auto;
+    text-align: center;
   }
   .about-profile-container{
     width: 32%;
     display: inline-block;
     overflow: hidden;
     padding: 5em;
+    text-align: left;
   }
   .prof-img-container{
     height: 12em;
@@ -364,6 +368,21 @@ section{
     padding: 5em 0;
   
 }
+
+.center-info-section{
+  text-align: center;
+}
+.center-info-section > div{
+  width: 40%;
+  margin: 0 auto;
+}
+.center-info-section > div h2{
+  text-align: center;
+}
+.center-info-section > div p{
+  /*text-align: left;*/
+}
+
 
 /* footer */
   footer{
