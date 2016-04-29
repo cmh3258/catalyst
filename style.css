@@ -52,13 +52,89 @@ section{
     color: white;
     width: 10em;
     font-size: 17px;
-    padding: 10px 22px;
+    padding: 10px 0;
+
     cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+
   }
   .signup-btn:hover{
-    /*opacity: .9;*/
-    background-color: #0CA5A0;
+background-color:#0CA5A0;
   }
+  /* Button 4a http://tympanus.net/codrops/2013/06/13/creative-button-styles/ */
+    .btn-4a:before {
+      left: 130%;
+      top: 0;
+    }
+
+    .btn-4a:hover:before {
+      left: 85%;
+    }
+
+  .signup-btn:before{
+    position: absolute;
+    height: 100%;
+    font-size: 16px;
+    line-height: 3.5;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .signup-btn:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+
+  .icon-arrow-right:before {
+    content: ">";
+    margin-top: -8px;
+  }
+
+
+  /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+  .contact-us-link{
+  }
+.contact-us-link a {
+    position: relative;
+    overflow: hidden;
+  padding: 0 4px;
+  height: 1em;
+
+  padding: 10px 0;
+  /*border-top: 2px solid #0972b4;*/
+  color: #0972b4;
+  text-shadow: none;
+      text-decoration: none;
+} 
+
+.contact-us-link a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 10px 0;
+  max-width: 0;
+  /*border-bottom: 2px solid #fff;*/
+  color: #fff;
+  content: attr(data-hover);
+  -webkit-transition: max-width 0.5s;
+  -moz-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+      margin-top: -4px;
+
+}
+
+.contact-us-link a:hover::before,
+.contact-us-link a:focus::before {
+  max-width: 100%;
+}
+
+
+
 
 /* icons */
     #ppl-icon{
@@ -101,7 +177,8 @@ section{
     margin-bottom: 10px;
     color: white;
     display: inline-block;
-    margin-right: 2em;
+    margin-right: 12px;
+    position: relative;
   }
 
   #topNav li a{
@@ -120,6 +197,80 @@ section{
   a:hover{
     color:#0DCAC5;
   }
+
+  /* http://tympanus.net/Development/CreativeLinkEffects/ */
+/*  .cl-effect-12 li a::before, 
+.cl-effect-12 li a::after{
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(10,10,10,0.7);
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+  }
+  .cl-effect-12 li a::after {
+    width: 35px;
+    height: 35px;
+    border-width: 3px;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    z-index: -1;
+}
+.cl-effect-12 a:hover::before,
+.cl-effect-12 a:hover::after,
+.cl-effect-12 a:focus::before,
+.cl-effect-12 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}*/
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+  margin-right: 5px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+  margin-left: 5px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
 
 /* header */
   #header{
@@ -382,6 +533,11 @@ section{
 .center-info-section > div p{
   /*text-align: left;*/
 }
+
+/* support */
+  #support .center-info-section form{
+    margin-top: 2em;
+  }
 
 
 /* footer */
